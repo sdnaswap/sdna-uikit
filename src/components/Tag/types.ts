@@ -9,6 +9,9 @@ export const variants = {
   TEXTSUBTLE: "textSubtle",
   BINANCE: "binance",
   FAILURE: "failure",
+  MANUAL: "manual",
+  AUTO: 'auto',
+  CORE: 'core'
 } as const;
 
 export const scales = {

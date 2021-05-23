@@ -35,4 +35,13 @@ export const styleVariants = {
   [variants.FAILURE]: {
     backgroundColor: "failure",
   },
+  [variants.CORE]: {
+    backgroundColor: "core",
+  },
+  [variants.MANUAL]: {
+    backgroundColor: "manual",
+  },
+  [variants.AUTO]: {
+    backgroundColor: "auto",
+  },
 };

@@ -2343,6 +2343,9 @@ var variants = {
     TEXTSUBTLE: "textSubtle",
     BINANCE: "binance",
     FAILURE: "failure",
+    MANUAL: "manual",
+    AUTO: 'auto',
+    CORE: 'core'
 };
 var scales$1 = {
     MD: "md",
@@ -2383,6 +2386,15 @@ var styleVariants = (_b = {},
     },
     _b[variants.FAILURE] = {
         backgroundColor: "failure",
+    },
+    _b[variants.CORE] = {
+        backgroundColor: "core",
+    },
+    _b[variants.MANUAL] = {
+        backgroundColor: "manual",
+    },
+    _b[variants.AUTO] = {
+        backgroundColor: "auto",
     },
     _b);
 
