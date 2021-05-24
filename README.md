@@ -1,8 +1,8 @@
-# 🥞 Pancake UIkit
+# 🥞 SuperDefi UIkit
 
 [![Version](https://img.shields.io/npm/v/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit)
 
-Pancake UIkit is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
+SuperDefi UIkit is a set of React components and hooks used to build pages on SuperDefi's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
