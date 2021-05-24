@@ -3633,7 +3633,9 @@ var templateObject_1$a;
 var PriceLink = styled.a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
+    return cakePriceUsd ? (
+    // <PriceLink href="https://pancakeswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+    React.createElement(PriceLink, { href: "#", target: "_blank" },
         React.createElement(Icon$S, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
@@ -3658,9 +3660,13 @@ var SocialLinks = function () { return (React.createElement(Flex, null, socials.
     var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
     var mr = index < socials.length - 1 ? "24px" : 0;
     if (social.items) {
-        return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+        return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (
+        // <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+        React.createElement(Link, { external: true, key: item.label, href: "#", "aria-label": item.label, color: "textSubtle" }, item.label)); })));
     }
-    return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
+    return (
+    // <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
+    React.createElement(Link, { external: true, key: social.label, href: "#", "aria-label": social.label, mr: mr },
         React.createElement(Icon, __assign({}, iconProps))));
 }))); };
 var SocialLinks$1 = React.memo(SocialLinks, function () { return true; });
