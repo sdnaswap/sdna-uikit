@@ -3688,7 +3688,7 @@ var SocialLinks = function () { return (React__default['default'].createElement(
     // }
     return (
     // <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-    React__default['default'].createElement(Link, { external: true, key: social.label, href: "#", "aria-label": social.label, mr: mr },
+    React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
         React__default['default'].createElement(Icon, __assign({}, iconProps))));
 }))); };
 var SocialLinks$1 = React__default['default'].memo(SocialLinks, function () { return true; });

@@ -3674,7 +3674,7 @@ var SocialLinks = function () { return (React.createElement(Flex, null, socials.
     // }
     return (
     // <Link external key={social.label} href={social.href} aria-label={social.label} mr={mr}>
-    React.createElement(Link, { external: true, key: social.label, href: "#", "aria-label": social.label, mr: mr },
+    React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
         React.createElement(Icon, __assign({}, iconProps))));
 }))); };
 var SocialLinks$1 = React.memo(SocialLinks, function () { return true; });
